@@ -7,14 +7,27 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bree Serif", serif;
+}
+main {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
 #parola {
-  width: 450px;
-  text-align: start;
+  width: 500px;
+  align-self: center;
   border: 4px solid black;
   border-radius: 10px;
   box-shadow: 0 4px 2px 2px black;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 auto;
+  padding: 1rem;
   background-color: rgba(247, 247, 247, 0.854);
 }
 
@@ -22,12 +35,34 @@
   box-shadow: 0px 0px 30px 1px rgb(0, 255, 110);
 }
 
-.animated {
-  position: absolute;
-  animation: position 5s infinite;
-}
-
-#sApp {
+.tre {
   color: #a666d6;
   text-decoration: none;
+  padding-left: 0%;
+  bottom: 100px;
+  animation-name: parola;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes parola {
+  form {
+    bottom: 1rem;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
+  to {
+    bottom: -80px;
+    opacity: 0%;
+  }
+}
+.due {
+  animation-delay: 4s;
+  color: blue;
+}
+.uno {
+  animation-delay: 4s;
+  color: brown;
 }
