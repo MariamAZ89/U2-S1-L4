@@ -1,8 +1,11 @@
-html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
 }
-body {
+main {
   background-color: #656565;
+  height: 100vh;
 }
 h2 {
   font-weight: 500;
