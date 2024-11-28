@@ -38,7 +38,7 @@ p {
   border-radius: 2px;
   text-align: center;
   justify-content: center;
-  transition: transform 1s, background-color 2s box-shadown 1s;
+  transition: transform 1s, background-color 2s, box-shadown 1s;
   margin: 0 5px 0 5px;
   animation: opatcity 6s;
 }
